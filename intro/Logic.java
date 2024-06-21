@@ -6,7 +6,13 @@ public class Logic {
         // String input = kb.nextLine();
 
         int v = 15;
+        System.out.println("Score: " + v);
+
         int total = 100;
-        System.out.println("Percentage: " + ((float) (v / total)) * 100 );
+        System.out.println("Total: " + total);
+
+        float quotient = (float) v / total; // 0.15
+        int percentage = (int) (quotient * 100); // 0.15 * 100 -> 15.000 -> 15
+        System.out.println("Percentage: " + percentage + "%");
     }
 }

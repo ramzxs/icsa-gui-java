@@ -46,19 +46,21 @@ public class InputOutput {
         // Remainder = 1
 
         System.out.print("Enter the First Number: ");
-        input = keyboard.nextLine();
-        a = Integer.parseInt(input);
+        input = keyboard.nextLine(); // "10"
+        a = Integer.parseInt(input); // "10" -> 10
 
         System.out.print("Enter the Second Number: ");
-        input = keyboard.nextLine();
-        b = Integer.parseInt(input);
+        input = keyboard.nextLine(); // "3"
+        b = Integer.parseInt(input); // "3" -> 3
 
-        System.out.println("Quotient = " + a / b);
+        // float quotient = (float) a / b;
+        int quotient = a / b;
+        System.out.println("Quotient = " + quotient);
 
-
-        int remainder = ?;
+        // 10 / 3 = 3 (Q)
+        // int remainder = a % b;
+        int remainder = a - (quotient * b);
         System.out.println("Remainder = " + remainder);
-
 
         keyboard.close();
     }

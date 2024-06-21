@@ -51,7 +51,7 @@ public class Logic {
 
 
         // EXERCISE
-        // Celsius to Farhenheit
+        // Celsius to Fahrenheit ((0°C × 9/5) + 32 = 32°F)
         // Min and Max from 3 Numbers (1, 2, 3)
     }
 }

@@ -11,13 +11,23 @@ public class ControlFlow {
             System.out.println("Evaluated to true");
         }
 
+        int x = 1;
+        
+        if (x > 0) {
+            System.out.println("Positive number");
+        }
+
+        if (x == 1) {
+            System.out.println("Unique");
+        }
+
 
         // if-else Statemnent
         char c = 'A';
 
         if (c == 'X') {
             System.out.println("Exit");
-        } else {
+        } else {  // Catch-All
             System.out.println("Continue");
         }
 
@@ -36,10 +46,8 @@ public class ControlFlow {
             System.out.println("Below Normal");
         } else if (f + (f * m) == n) {
             System.out.println("Normal");
-        } else if (f + (f * m) > n) {
+        } else { // Catch-All
             System.out.println("Above Normal");
-        } else {
-            System.out.println("Invalid Result");
         }
     }
 }

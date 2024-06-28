@@ -5,7 +5,7 @@ public class ControlFlow {
         // CONTROL FLOW STATEMENTS
 
         // if Statement
-        boolean a = true;
+        boolean a = false;
 
         if (!a) { // ! (not)
             System.out.println("Evaluated to true");
@@ -36,7 +36,7 @@ public class ControlFlow {
             System.out.println("Below Normal");
         } else if (f + (f * m) == n) {
             System.out.println("Normal");
-        } else if (f + (f * m) == n) {
+        } else if (f + (f * m) > n) {
             System.out.println("Above Normal");
         } else {
             System.out.println("Invalid Result");

@@ -30,6 +30,10 @@ public class Functions {
     static void doNothing() {
     }
 
+    static int getAverage(int a, int b) {
+        return ((a + b) / 3);
+    }
+
     static int getAverage(int a, int b, int c) {
         return ((a + b + c) / 3);
     }

@@ -24,6 +24,11 @@ public class Loops {
             System.out.println("j " + j++);
         }
 
-        
+
+        // for Loop
+        // init -> { check -> run -> update }*
+        for (int k = 1, l = 1; (k <= 10 && l > 0); k++, l++) {
+            System.out.println("k " + k);
+        }
     }
 }

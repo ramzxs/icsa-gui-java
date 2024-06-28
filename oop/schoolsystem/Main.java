@@ -16,9 +16,22 @@ public class Main {
         */
 
         std = new Student("2024-0001");
-        std.name = "John";
-        
+        std.nameFirst = "John";
+        std.nameLast = "Wick";
+        std.dob = "2000-01-01";
+        std.sex = "Male";
+
         System.out.println("Student ID: " + std.id);
-        System.out.println("Student Name: " + std.name);        
+        System.out.println("Student Name: " + std.nameFirst + " " + std.nameLast);
+
+        System.out.println(std.toString());
+
+
+        Person p = new Person();
+        System.out.println(p);
+
+
+        Employee e = new Employee();
+        System.out.println(e);
     }
 }

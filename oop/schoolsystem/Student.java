@@ -1,12 +1,13 @@
 package oop.schoolsystem;
 
-// Modifiers  class Keyword  Class Name
-public        class          Student     {
+// Inheriting from java.lang.Object
+
+// Modifiers  class Keyword  Class Name  // INHERITANCE
+public        class          Student     extends Person {
     // MEMBERS
 
     // Fields
     String id;
-    String name;
 
     // Methods
 
@@ -28,5 +29,12 @@ public        class          Student     {
         this.id = id;
         this.name = name;
     }
+
+
+    @Override
+    public String toString() {
+        return "Student # " + this.id;
+    }
+
 
 }

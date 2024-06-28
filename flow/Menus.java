@@ -6,25 +6,54 @@ public class Menus {
     public static void main(String[] args) {
         System.out.println("MENUS");
 
-        /*
-        ---------------
-        MAIN MENU
-        1. Intro
-        2. Basic
-        3. Advanced
-        4. Expert
-        X. Exit
-
-        Select: 1 (kb.nextLine())
-
-        INTRO / BASIC / ADVANCED / EXPERT
-        Press any key to continue... (kb.nextLine())
-
-        Bye!        
-        */
-
         Scanner kb = new Scanner(System.in);
-        String in = kb.nextLine();
+        String choice = "";
+
+        do {
+            System.out.println("---------------");
+            System.out.println("MAIN MENU");
+            System.out.println("1. Intro");
+            System.out.println("2. Basic");
+            System.out.println("3. Advanced");
+            System.out.println("4. Expert");
+            System.out.println("X. Exit");
+            System.out.print("Select: ");
+            choice = (kb.nextLine()).trim().toUpperCase();
+            System.out.println("---------------");
+
+            switch (choice) {
+                case "1":
+                    System.out.println("INTRO");
+                    System.out.println("Press any key to continue...");
+                    kb.nextLine();
+                    break;
+                case "2":
+                    System.out.println("BASIC");
+                    System.out.println("Press any key to continue...");
+                    kb.nextLine();
+                    break;
+                case "3":
+                    System.out.println("ADVANCED");
+                    System.out.println("Press any key to continue...");
+                    kb.nextLine();
+                    break;
+                case "4":
+                    System.out.println("EXPERT");
+                    System.out.println("Press any key to continue...");
+                    kb.nextLine();
+                    break;
+                case "X":
+                    System.out.println("Bye!");
+                    break;
+                default: // Catch All
+                    System.out.println("Invalid Choice");
+                    System.out.println("Press any key to continue...");
+                    kb.nextLine();
+            }
+        } while (!choice.equals("X"));
+        // choice != "X"
+        // choice == "X"
+
         kb.close();
     }
 }

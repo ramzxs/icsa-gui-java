@@ -25,9 +25,9 @@ public        class          Student     extends Person {
         this.id = id;
     }
 
-    public Student(String id, String name) {
+    public Student(String id, String nameFirst) {
         this.id = id;
-        this.name = name;
+        this.nameFirst = nameFirst;
     }
 
 

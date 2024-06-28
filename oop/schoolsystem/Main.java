@@ -28,10 +28,14 @@ public class Main {
 
 
         Person p = new Person();
+        p.nameFirst = "Kath";
         System.out.println(p);
+        System.out.println(p.nameFirst);
 
 
         Employee e = new Employee();
+        e.nameFirst = "Lola";
         System.out.println(e);
+        System.out.println(e.nameFirst);
     }
 }

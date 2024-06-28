@@ -11,8 +11,8 @@ public class Switch {
             case 'S': System.out.println("Single"); break;
             case 'M': System.out.println("Married"); break;
             case 'W': System.out.println("Widow/Widower"); break;
-            case 'T': System.out.println("Separated"); break;
-            default: System.out.println("Invalid");
+            case 'D': System.out.println("Separated"); break;
+            default:  System.out.println("Invalid");
         }
 
         // String Equality / Equivalence

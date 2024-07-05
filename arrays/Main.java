@@ -98,8 +98,9 @@ class Main {
         int min = 0; // Lower bound (inclusive)
         int max = 2; // Upper bound (inclusive)
         int randomNum = min + (int)(Math.random() * ((max - min) + 1));
+        // Math.random() = 0.0 ... 0.5 .. 0.9 * 3 = 0, 1, 2
 
-        System.out.println( randomNum );
+        // System.out.println( randomNum );
         System.out.println( quotes[randomNum] );
     }
 }

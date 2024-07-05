@@ -1,7 +1,8 @@
 public class Captcha {
     public static void main(String[] args) {
-        System.out.println("CAPTCHA");
+        System.out.println("CAPTCHA APP");
 
+        // symbols[ 0 ... symbols.length-1 ]
         char[] symbols = {
             'A', 'B', 'C',
             'a', 'b', 'c',
@@ -12,10 +13,26 @@ public class Captcha {
         int N = 3;
 
         // ALGO
-        // Set result = "";
-        // Loop N times
-        //   Generate random number between 0 to symbols.length - 1
-        //   Save the character to result
-        // Print result
+        // 1. Set result = "";
+        // 2. Loop N times
+        //    2.1 Generate random number between 0 to symbols.length - 1
+        //    2.2 Append the character to result
+        // 3. Print result
+
+        String result = "";
+
+        for (int i = 1; i <= N; i++) {
+            int min = 0;                  // Lower bound (inclusive)
+            int max = symbols.length - 1; // Upper bound (inclusive)
+            int randomNum = min + (int)(Math.random() * ((max - min) + 1));
+            
+            // result = result + i; // "12" + 3 -> "123"
+            // result = result + randomNum + ",";
+            // System.out.println( symbols[randomNum] );
+            
+            result = result + symbols[randomNum];
+        }
+
+        System.out.println("Result: " + result);
     }
 }

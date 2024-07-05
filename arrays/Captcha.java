@@ -7,16 +7,16 @@ public class Captcha {
             'A', 'B', 'C',
             'a', 'b', 'c',
             '1', '2', '3',
-            '_', '@', '.'
+            '_', '@', '.', '#'
         };
 
-        int N = 3;
+        int N = 8;
 
         // ALGO
         // 1. Set result = "";
         // 2. Loop N times
         //    2.1 Generate random number between 0 to symbols.length - 1
-        //    2.2 Append the character to result
+        //    2.2 Append the randomly-selected character to result
         // 3. Print result
 
         String result = "";
@@ -29,7 +29,7 @@ public class Captcha {
             // result = result + i; // "12" + 3 -> "123"
             // result = result + randomNum + ",";
             // System.out.println( symbols[randomNum] );
-            
+
             result = result + symbols[randomNum];
         }
 

@@ -2,15 +2,11 @@ public class PasswordGenerator {
     public static void main(String[] args) {
         System.out.println("PASSWORD GENERATOR");
 
-        // Password Format: Abc_123
-        // 1 uppercase letter
-        // 1 or more lowercase letters (N times)
-        // 1 symbol
-        // 1 or more numbers (M times)
-
-        // Letters: A-Z a-z
-        // Numbers: 0-9
-        // Symbols: _ # @ .
+        // Password Format:                        Abc_123
+        // 1 uppercase letter                      [A ... Z]
+        // 1 or more lowercase letters (N times)   [a ... z]
+        // 1 symbol                                [ _, #, @, . ]
+        // 1 or more numbers (M times)             [0 ... 9]
 
         int N = 2; // 2 small letters
         int M = 3; // 3 digits

@@ -10,7 +10,7 @@ public class Captcha {
             '_', '@', '.', '#'
         };
 
-        int N = 8;
+        int N = 10;
 
         // ALGO
         // 1. Set result = "";

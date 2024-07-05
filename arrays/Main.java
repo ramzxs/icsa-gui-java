@@ -31,5 +31,17 @@ class Main {
         }
 
         // Print the letters in reverse order
+        System.out.println("REVERSED");
+        for (int i = 4; i >= 0; i--) {
+            System.out.println( aWord[i] );
+        }
+        // System.out.println( aWord[4] );
+        // System.out.println( aWord[3] );
+        // System.out.println( aWord[2] );
+        // System.out.println( aWord[1] );
+        // System.out.println( aWord[0] );
+
+
+        // ARRAY OF NUMBERS
     }
 }
